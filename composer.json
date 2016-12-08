@@ -1,0 +1,39 @@
+{
+  "name": "dravencms/paginator",
+  "type": "dravencms-package",
+  "description": "DravenCMS Paginator (visualPaginator)",
+  "keywords": [
+    "dravencms",
+    "paginator"
+  ],
+  "license": [
+    "LGPL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Adam Schubert"
+    }
+  ],
+  "require": {
+    "ipub/visual-paginator": "@dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "Dravencms\\": "src/"
+    }
+  },
+  "extra": {
+    "dravencms": {
+      "configuration": {
+        "extensions": {
+          "visualPaginator": "IPub\\VisualPaginator\\DI\\VisualPaginatorExtension"
+        },
+        "translation": {
+          "dirs": [
+            "%appDir%/../vendor/dravencms/paginator/src/Dravencms/Paginator/lang"
+          ]
+        }
+      }
+    }
+  }
+}
