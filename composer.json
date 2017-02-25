@@ -26,7 +26,8 @@
     "dravencms": {
       "configuration": {
         "extensions": {
-          "visualPaginator": "IPub\\VisualPaginator\\DI\\VisualPaginatorExtension"
+          "visualPaginator": "IPub\\VisualPaginator\\DI\\VisualPaginatorExtension",
+          "paginator": "Dravencms\\Paginator\\DI\\PaginatorExtension"
         },
         "translation": {
           "dirs": [
