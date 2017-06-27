@@ -16,7 +16,7 @@
   ],
   "require": {
     "ipub/visual-paginator": "@dev",
-    "dravencms/translation": "@dev"
+    "dravencms/translation": "^v1.0"
   },
   "autoload": {
     "psr-0": {
