@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Dravencms\Paginator\DI;
 
@@ -11,7 +11,7 @@ use Nette\DI\CompilerExtension;
  */
 class PaginatorExtension extends CompilerExtension implements TranslationProviderInterface
 {
-    public function getTranslationResources()
+    public function getTranslationResources(): array
     {
         return [__DIR__.'/../lang'];
     }
