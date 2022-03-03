@@ -18,8 +18,6 @@ class BasePaginator extends BaseControl implements BasePaginatorFactory
     public function __construct(ITranslator $translator = null)
     {
         $this->translator = $translator;
-
-        parent::__construct();
     }
 
     /**
@@ -27,7 +25,7 @@ class BasePaginator extends BaseControl implements BasePaginatorFactory
      * @param $name
      * @return Grid
      */
-    public function create(IContainer $container = null, $name = null)
+    public function create(IContainer $container = null, string $name = null)
     {
         $control = new Control();
         $control->setTemplateFile(__DIR__.'/bootstrap-localized.latte');

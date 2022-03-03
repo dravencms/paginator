@@ -15,8 +15,7 @@
     }
   ],
   "require": {
-    "ipub/visual-paginator": "^v1.0.6",
-    "dravencms/translation": "^v1.0"
+    "dravencms/translation": ">=1.2"
   },
   "autoload": {
     "psr-0": {
@@ -25,17 +24,7 @@
   },
   "extra": {
     "dravencms": {
-      "configuration": {
-        "extensions": {
-          "visualPaginator": "IPub\\VisualPaginator\\DI\\VisualPaginatorExtension",
-          "paginator": "Dravencms\\Paginator\\DI\\PaginatorExtension"
-        },
-        "translation": {
-          "dirs": [
-            "%appDir%/../vendor/dravencms/paginator/src/Dravencms/Paginator/lang"
-          ]
-        }
-      }
+      "configuration": "dravencms.config.neon"
     }
   }
 }

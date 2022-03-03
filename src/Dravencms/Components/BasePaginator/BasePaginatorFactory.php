@@ -14,5 +14,5 @@ interface BasePaginatorFactory
      * @param $name
      * @return BasePaginator
      */
-    public function create(IContainer $container = null, $name = null);
+    public function create(IContainer $container = null, string $name = null): BasePaginator;
 }

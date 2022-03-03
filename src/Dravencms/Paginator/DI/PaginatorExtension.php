@@ -2,13 +2,14 @@
 
 namespace Dravencms\Paginator\DI;
 
-use Kdyby\Translation\DI\ITranslationProvider;
-use Nette;
+use Contributte\Translation\DI\TranslationProviderInterface;
+use Nette\DI\CompilerExtension;
+
 /**
  * Class AdminExtension
  * @package Dravencms\Admin\DI
  */
-class PaginatorExtension extends Nette\DI\CompilerExtension implements ITranslationProvider
+class PaginatorExtension extends CompilerExtension implements TranslationProviderInterface
 {
     public function getTranslationResources()
     {
