@@ -1,0 +1,2 @@
+extensions:
+    dravencms.paginator: Dravencms\Paginator\DI\PaginatorExtension
