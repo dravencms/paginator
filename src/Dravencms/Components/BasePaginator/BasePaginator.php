@@ -42,7 +42,7 @@ class BasePaginator extends BaseControl {
     /**
      * @param ITranslator $translator
      */
-    public function __construct(ITranslator $translator = null) {
+    public function __construct(?ITranslator $translator = null) {
         $this->translator = $translator;
         $this->paginator = new Paginator();
     }
